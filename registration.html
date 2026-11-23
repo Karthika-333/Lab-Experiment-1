@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="regis.css">
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="studentid">Student ID:</label>
+            <input type="text" id="studentid" name="studentid" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   pattern="[0-9]{10}" maxlength="10" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="domain">Enter your domain info:</label>
+            <textarea id="domain" name="domain" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+            <span class="field-label">Gender:</span>
+            <div class="options">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span class="field-label">Hobbies:</span>
+            <div class="options">
+                <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies" value="Reading"> Reading books</label>
+                <label><input type="checkbox" name="hobbies" value="Yoga"> Yoga</label>
+                <label><input type="checkbox" name="hobbies" value="Listening music"> Listening music</label>
+                <label><input type="checkbox" name="hobbies" value="Watching movies"> Watching movies</label>
+                <label><input type="checkbox" name="hobbies" value="Travelling"> Travelling</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Your department:</label>
+            <select id="department" name="department">
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="Civil">Civil</option>
+                <option value="Mechanical">Mechanical</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background-color: #087e83;
+    color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background: white;
+    color: #087e83;
+    padding: 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header p {
+    font-size: 12px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+nav {
+    background-color: #075c63;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.hero {
+    background: linear-gradient(120deg, #d7f4f5, #f5e8c8);
+    min-height: 260px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    color: #075c63;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    font-size: 65px;
+}
+
+.explore {
+    background-color: #087e83;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+section, aside {
+    margin-top: 25px;
+}
+
+section h2, aside h2 {
+    margin-bottom: 15px;
+    color: #075c63;
+}
+
+.event-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.event-card h3 {
+    color: #087e83;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    margin-top: 8px;
+}
+
+aside {
+    background: #e1f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside p {
+    margin-top: 8px;
+}
+
+footer {
+    background: #075c63;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    header {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
